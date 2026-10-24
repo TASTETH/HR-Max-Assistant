@@ -1,0 +1,18 @@
+erDiagram
+ direction TB
+ employees o|--o{ max_inbox : resolved_identity
+ employees ||--o{ messages : conversation
+ max_inbox o|--o| messages : creates_once
+ plan_events o|--o{ messages : explicit_context
+ messages o|--o{ messages : reply_to
+ employees ||--o{ hr_cases : issues
+ hr_users ||--o{ hr_cases : assigned_owner
+ messages ||--o| hr_cases : root_question
+ hr_cases o|--o{ messages : thread
+ messages ||--o| outbox : outbound_delivery
+ messages ||--o{ message_analysis : versioned_analysis_jobs
+ employees o|--o{ audit_log : significant_actions
+ hr_users o|--o{ audit_log : actor
+
+ messages ||--o{ pending_interactions : clarifies_original
+ event_answers o|--o{ message_analysis : feedback_revisions

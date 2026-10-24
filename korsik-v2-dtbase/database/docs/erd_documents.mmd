@@ -1,0 +1,7 @@
+erDiagram
+ direction TB
+ org_units o|--o{ documents : optional_access_scope
+ documents ||--o{ document_versions : immutable_content_versions
+ document_versions ||--o{ document_chunks : chunks
+ messages ||--o{ answer_sources : citations
+ document_chunks ||--o{ answer_sources : evidence
