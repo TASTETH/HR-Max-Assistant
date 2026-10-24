@@ -1,0 +1,51 @@
+# Python: окружения и байткод
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+
+# Секреты и локальные настройки. Шаблоны сохраняем в Git.
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Состояние фоновых процессов и логи
+celerybeat-schedule*
+celerybeat.pid
+*.pid
+*.log
+/logs/
+/runtime/
+
+# Локальные данные PostgreSQL/Redis и резервные копии
+/pgdata/
+/postgres-data/
+/redis-data/
+/dump.rdb
+/appendonly.aof
+/appendonlydir/
+/backups/
+
+# Сборка и выдаваемые архивы
+/build/
+/dist/
+*.egg-info/
+.eggs/
+
+# Кэши инструментов
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ОС и персональные настройки редактора
+.DS_Store
+Thumbs.db
+.idea/
+*.swp
+*.swo
+
+# Подготовленный onboarding/data/*.json, SQL и документация НЕ игнорируются.
