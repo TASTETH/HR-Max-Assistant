@@ -10,3 +10,8 @@ __pycache__/
 
 # Runtime logs
 *.log
+__pycache__/
+*.pyc
+*.log
+.venv/
+.DS_Store

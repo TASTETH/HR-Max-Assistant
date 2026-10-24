@@ -1,4 +1,0 @@
-PASS v1 -> v2 migration preserves legacy responses, event times/statuses and invitations
-PASS migration re-run rejects version 3 without changing it
-PASS migration rejects conflicting_forms without partial schema changes
-PASS migration rejects conflicting_sends without partial schema changes
