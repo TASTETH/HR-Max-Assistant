@@ -1,0 +1,48 @@
+# Local secrets. Keep the empty configuration template.
+.env
+.env.*
+!.env.example
+
+# Python environments and generated packaging files.
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# OCR snapshots, RAG manifests, model caches and local document data.
+# Ignoring these does not delete local files required for operation.
+/data/
+/models/
+/.cache/
+/raw/
+/documents/
+/sample_results/
+/verification/
+
+# Local Qdrant storage/backups; Compose uses a named Docker volume.
+/qdrant_storage/
+/storage/
+/snapshots/
+
+# Contains actual excerpts: restore locally for corpus-specific checks.
+/checks/questions.json
+
+# Corporate source documents and generated archives/logs.
+*.pdf
+*.pptx
+*.docx
+*.xlsx
+*.zip
+*.tar.gz
+*.log
+*.tmp
+.ingest.lock

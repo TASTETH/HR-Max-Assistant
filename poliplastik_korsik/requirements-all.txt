@@ -1,0 +1,2 @@
+-r requirements-tested.txt
+-r requirements-rag.txt

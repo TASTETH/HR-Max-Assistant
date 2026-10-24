@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "poliplastik-korsik-rag"
+version = "1.0.0"
+description = "Local OCR adapter and hybrid RAG for the Korsik HR assistant"
+requires-python = ">=3.12"
+dynamic = ["dependencies"]
+
+[tool.setuptools]
+py-modules = ["ingest", "ocr_core", "extract", "chunks", "review"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements-tested.txt", "requirements-rag.txt"]}
+
+[tool.setuptools.packages.find]
+include = ["korsik_rag*"]

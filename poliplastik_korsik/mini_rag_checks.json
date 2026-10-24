@@ -1,0 +1,445 @@
+﻿[
+  {
+    "id": "q01",
+    "question": "Можно ли принять деловой подарок стоимостью 2500 рублей?",
+    "kind": "positive",
+    "expected_status": "answered",
+    "history": [],
+    "expected_sources": [
+      {
+        "document": "Антикоррупционная политика.pptx",
+        "location_type": "slide",
+        "location": 8,
+        "segment_id": "727c370a8a8b3dcce218ec873564cc8ea0fb93e9ae9d8ddf50ac536a85ecd034:slide:8",
+        "verified_quote": "не должны быть дорогостоящими (их стоимость не должна составлять более трех тысяч рублей); \nне представлять собой скрытое вознаграждение за услугу, действие, бездействие, попустительство, принятие определенного решения о сделке, соглашении, и т.п. или попытку "
+      },
+      {
+        "document": "Антикоррупционная политика.pptx",
+        "location_type": "slide",
+        "location": 9,
+        "segment_id": "727c370a8a8b3dcce218ec873564cc8ea0fb93e9ae9d8ddf50ac536a85ecd034:slide:9",
+        "verified_quote": "Не допускаются подарки от имени Общества, его работников и представителей третьим лицам в виде денежных средств в любой валюте, наличных или безналичных, ценных бумаг и драгоценных металлов.\nПри получении делового подарка работник обязан принять меры по недопу"
+      }
+    ],
+    "note": "Недостаточно сравнить только сумму: нужны критерии и запреты.",
+    "expected_answer": "по источникам",
+    "actual_ranking": [],
+    "actual_sources": []
+  },
+  {
+    "id": "q02",
+    "question": "Можно ли принять подарок наличными, если сумма меньше трёх тысяч?",
+    "kind": "positive",
+    "expected_status": "answered",
+    "history": [],
+    "expected_sources": [
+      {
+        "document": "Антикоррупционная политика.pptx",
+        "location_type": "slide",
+        "location": 9,
+        "segment_id": "727c370a8a8b3dcce218ec873564cc8ea0fb93e9ae9d8ddf50ac536a85ecd034:slide:9",
+        "verified_quote": "принимать подарки в форме наличных, безналичных денежных средств, ценных бумаг, драгоценных металлов."
+      }
+    ],
+    "note": "",
+    "expected_answer": "по источникам",
+    "actual_ranking": [],
+    "actual_sources": []
+  },
+  {
+    "id": "q03",
+    "question": "Что делать, если подарок создаёт конфликт интересов?",
+    "kind": "positive",
+    "expected_status": "answered",
+    "history": [],
+    "expected_sources": [
+      {
+        "document": "Антикоррупционная политика.pptx",
+        "location_type": "slide",
+        "location": 9,
+        "segment_id": "727c370a8a8b3dcce218ec873564cc8ea0fb93e9ae9d8ddf50ac536a85ecd034:slide:9",
+        "verified_quote": "В случае возникновения конфликта интересов или возможности его возникновения при получении делового подарка, работник в установленном порядке должен уведомить об этом Общество и сдать полученный деловой подарок ответственному за профилактику коррупционных прав"
+      }
+    ],
+    "note": "",
+    "expected_answer": "по источникам",
+    "actual_ranking": [],
+    "actual_sources": []
+  },
+  {
+    "id": "q04",
+    "question": "Куда сообщить о коррупции, если сотрудник в отпуске?",
+    "kind": "positive",
+    "expected_status": "answered",
+    "history": [],
+    "expected_sources": [
+      {
+        "document": "Антикоррупционная политика.pptx",
+        "location_type": "slide",
+        "location": 5,
+        "segment_id": "727c370a8a8b3dcce218ec873564cc8ea0fb93e9ae9d8ddf50ac536a85ecd034:slide:5",
+        "verified_quote": "При невозможности направления работником уведомления (служебная командировка, отпуск, больничный и т.д.) допускается его передача посредством электронной почты на корпоративный адрес: «Предотвратим коррупцию!» (anti-corruption@polyplastic.ru) или в устном виде"
+      }
+    ],
+    "note": "",
+    "expected_answer": "по источникам",
+    "actual_ranking": [],
+    "actual_sources": []
+  },
+  {
+    "id": "q07",
+    "question": "Что считается конфиденциальной информацией?",
+    "kind": "positive",
+    "expected_status": "answered",
+    "history": [],
+    "expected_sources": [
+      {
+        "document": "Положение о коммерческой тайне.pptx",
+        "location_type": "slide",
+        "location": 3,
+        "segment_id": "a2a16c967e82c868b95d54e7df5f6791cd2ab683b1841956b9b19926ed973923:slide:3",
+        "verified_quote": "Конфиденциальная информация – сведения любого характера, которые имеют для Общества действительную или потенциальную ценность в силу неизвестности их третьим лицам и к которым у третьих лиц нет свободного доступа на законном основании.\n\nКоммерческая тайна – эт"
+      }
+    ],
+    "note": "",
+    "expected_answer": "по источникам",
+    "actual_ranking": [],
+    "actual_sources": []
+  },
+  {
+    "id": "q08",
+    "question": "Сохраняется ли обязанность не разглашать коммерческую тайну после увольнения?",
+    "kind": "positive",
+    "expected_status": "answered",
+    "history": [],
+    "expected_sources": [
+      {
+        "document": "Положение о коммерческой тайне.pptx",
+        "location_type": "slide",
+        "location": 7,
+        "segment_id": "a2a16c967e82c868b95d54e7df5f6791cd2ab683b1841956b9b19926ed973923:slide:7",
+        "verified_quote": "после прекращения действия трудового договора;\n- возместить причиненные Обществу убытки, причиненных ему разглашением информации, составляющих КТ;\n передать при прекращении или расторжении трудового договора носители информации, составляющую КТ."
+      }
+    ],
+    "note": "",
+    "expected_answer": "по источникам",
+    "actual_ranking": [],
+    "actual_sources": []
+  },
+  {
+    "id": "q10",
+    "question": "Разрешается ли передавать конфиденциальную информацию по открытым каналам связи?",
+    "kind": "positive",
+    "expected_status": "answered",
+    "history": [],
+    "expected_sources": [
+      {
+        "document": "Положение о коммерческой тайне.pptx",
+        "location_type": "slide",
+        "location": 10,
+        "segment_id": "a2a16c967e82c868b95d54e7df5f6791cd2ab683b1841956b9b19926ed973923:slide:10",
+        "verified_quote": "допускается только в зашифрованном и подписанном виде, обеспечивающем ее безопасность - авторизация, шифрование, ЭЦП и т.п.\n\nЭлектронная цифровая подпись – далее ЭЦП"
+      }
+    ],
+    "note": "",
+    "expected_answer": "по источникам",
+    "actual_ranking": [],
+    "actual_sources": []
+  },
+  {
+    "id": "q11",
+    "question": "Можно ли отправить пароль тем же способом, что и конфиденциальный документ?",
+    "kind": "positive",
+    "expected_status": "answered",
+    "history": [],
+    "expected_sources": [
+      {
+        "document": "Положение о коммерческой тайне.pptx",
+        "location_type": "slide",
+        "location": 11,
+        "segment_id": "a2a16c967e82c868b95d54e7df5f6791cd2ab683b1841956b9b19926ed973923:slide:11",
+        "verified_quote": "Передача паролей и информации об иных средствах защиты электронных документов должна осуществляться способом, отличным от способа передачи КИ."
+      }
+    ],
+    "note": "",
+    "expected_answer": "по источникам",
+    "actual_ranking": [],
+    "actual_sources": []
+  },
+  {
+    "id": "q12",
+    "question": "Какой график рабочей недели установлен ПВТР?",
+    "kind": "positive",
+    "expected_status": "answered",
+    "history": [],
+    "expected_sources": [
+      {
+        "document": "Правила внутреннего трудового распорядка П 3.11-07 Издание 1.pdf",
+        "location_type": "page",
+        "location": 15,
+        "segment_id": "09a12305473b539273b0944d95bfa35fb274844dfef3265600c3e857ce2b9056:page:15",
+        "verified_quote": "6.6.1. Работникам Организации устанавливается пятидневная рабочая неделя с двумя\nвыходными днями — суббота и воскресенье. С понедельника по четверг: начало работы — 9:00,\nокончание работы — 18:00. В пятницу: начало работы — 9:00, окончание работы — 17:00.\nПере"
+      },
+      {
+        "document": "Правила внутреннего трудового распорядка П 3.11-07 Издание 1.pdf",
+        "location_type": "page",
+        "location": 16,
+        "segment_id": "09a12305473b539273b0944d95bfa35fb274844dfef3265600c3e857ce2b9056:page:16",
+        "verified_quote": "6.6.5. Если при приеме на работу или в течение трудовых отношений работнику\nустанавливается иной режим рабочего времени и времени отдыха, то такие условия подлежат\nвключению в трудовой договор в качестве обязательных.\n\n6.6.6. Время, фактически отработанное каж"
+      }
+    ],
+    "note": "Указать условия для дистанционной работы и иного договорного режима.",
+    "expected_answer": "по источникам",
+    "actual_ranking": [],
+    "actual_sources": []
+  },
+  {
+    "id": "q13",
+    "question": "Как определяется режим работы дистанционного работника?",
+    "kind": "positive",
+    "expected_status": "answered",
+    "history": [],
+    "expected_sources": [
+      {
+        "document": "Правила внутреннего трудового распорядка П 3.11-07 Издание 1.pdf",
+        "location_type": "page",
+        "location": 15,
+        "segment_id": "09a12305473b539273b0944d95bfa35fb274844dfef3265600c3e857ce2b9056:page:15",
+        "verified_quote": "6.6.4. Режим рабочего времени и времени отдыха дистанционного работника\nустанавливается им по своему усмотрению, если иное не предусмотрено трудовым договором\nо дистанционной работе."
+      },
+      {
+        "document": "Правила внутреннего трудового распорядка П 3.11-07 Издание 1.pdf",
+        "location_type": "page",
+        "location": 16,
+        "segment_id": "09a12305473b539273b0944d95bfa35fb274844dfef3265600c3e857ce2b9056:page:16",
+        "verified_quote": "6.6.5. Если при приеме на работу или в течение трудовых отношений работнику\nустанавливается иной режим рабочего времени и времени отдыха, то такие условия подлежат\nвключению в трудовой договор в качестве обязательных.\n\n6.6.6. Время, фактически отработанное каж"
+      }
+    ],
+    "note": "",
+    "expected_answer": "по источникам",
+    "actual_ranking": [],
+    "actual_sources": []
+  },
+  {
+    "id": "q14",
+    "question": "Сколько дней ежегодного отпуска предусмотрено и учитываются ли праздники?",
+    "kind": "positive",
+    "expected_status": "answered",
+    "history": [],
+    "expected_sources": [
+      {
+        "document": "Правила внутреннего трудового распорядка П 3.11-07 Издание 1.pdf",
+        "location_type": "page",
+        "location": 17,
+        "segment_id": "09a12305473b539273b0944d95bfa35fb274844dfef3265600c3e857ce2b9056:page:17",
+        "verified_quote": "6.7.4. Работникам ежегодно предоставляются отпуска с сохранением места работы\n(должности) и среднего заработка (ежегодные оплачиваемые отпуска) продолжительностью\n28 календарных дней.\n\nНерабочие праздничные дни, приходящиеся на период отпуска, в число календар"
+      }
+    ],
+    "note": "",
+    "expected_answer": "по источникам",
+    "actual_ranking": [],
+    "actual_sources": []
+  },
+  {
+    "id": "q16",
+    "question": "Можно ли разделить ежегодный отпуск на части?",
+    "kind": "positive",
+    "expected_status": "answered",
+    "history": [],
+    "expected_sources": [
+      {
+        "document": "Правила внутреннего трудового распорядка П 3.11-07 Издание 1.pdf",
+        "location_type": "page",
+        "location": 18,
+        "segment_id": "09a12305473b539273b0944d95bfa35fb274844dfef3265600c3e857ce2b9056:page:18",
+        "verified_quote": "6.7.11. По соглашению между работником и работодателем ежегодный оплачиваемый\nотпуск может быть разделен на части. При этом хотя бы одна из частей этого отпуска должна\nбыть не менее 14 календарных дней.\n\n6.7.12. Отзыв работника из отпуска допускается только с "
+      }
+    ],
+    "note": "",
+    "expected_answer": "по источникам",
+    "actual_ranking": [],
+    "actual_sources": []
+  },
+  {
+    "id": "q17",
+    "question": "Есть ли корпоративная ипотека и какая процентная ставка?",
+    "kind": "negative",
+    "expected_status": "insufficient_evidence",
+    "history": [],
+    "expected_sources": [],
+    "note": "В предоставленном корпусе нет правил корпоративной ипотеки.",
+    "expected_answer": "не определён",
+    "actual_ranking": [],
+    "actual_sources": []
+  },
+  {
+    "id": "q18",
+    "question": "Пришлите актуальный график смен на ноябрь для завода в Казани.",
+    "kind": "negative",
+    "expected_status": "insufficient_evidence",
+    "history": [],
+    "expected_sources": [],
+    "note": "Нет такого расписания и привязки площадки; допустимо уточнение вместо отказа.",
+    "expected_answer": "не определён",
+    "actual_ranking": [],
+    "actual_sources": []
+  },
+  {
+    "id": "q19",
+    "question": "А это можно?",
+    "kind": "ambiguous",
+    "expected_status": "needs_clarification",
+    "history": [],
+    "expected_sources": [],
+    "note": "",
+    "expected_answer": "не определён",
+    "actual_ranking": [],
+    "actual_sources": []
+  },
+  {
+    "id": "q20",
+    "question": "А если дистанционно?",
+    "kind": "follow_up",
+    "expected_status": "answered",
+    "history": [
+      {
+        "role": "user",
+        "content": "Какой график рабочей недели установлен ПВТР?"
+      }
+    ],
+    "expected_sources": [
+      {
+        "document": "Правила внутреннего трудового распорядка П 3.11-07 Издание 1.pdf",
+        "location_type": "page",
+        "location": 15,
+        "segment_id": "09a12305473b539273b0944d95bfa35fb274844dfef3265600c3e857ce2b9056:page:15",
+        "verified_quote": "6.6.4. Режим рабочего времени и времени отдыха дистанционного работника\nустанавливается им по своему усмотрению, если иное не предусмотрено трудовым договором\nо дистанционной работе."
+      },
+      {
+        "document": "Правила внутреннего трудового распорядка П 3.11-07 Издание 1.pdf",
+        "location_type": "page",
+        "location": 16,
+        "segment_id": "09a12305473b539273b0944d95bfa35fb274844dfef3265600c3e857ce2b9056:page:16",
+        "verified_quote": "6.6.5. Если при приеме на работу или в течение трудовых отношений работнику\nустанавливается иной режим рабочего времени и времени отдыха, то такие условия подлежат\nвключению в трудовой договор в качестве обязательных.\n\n6.6.6. Время, фактически отработанное каж"
+      }
+    ],
+    "note": "",
+    "expected_answer": "по источникам",
+    "actual_ranking": [],
+    "actual_sources": []
+  },
+  {
+    "id": "n01",
+    "question": "Какой пароль от гостевого Wi-Fi в московском офисе?",
+    "kind": "negative",
+    "expected_status": "insufficient_evidence",
+    "expected_answer": "не определён",
+    "history": [],
+    "expected_sources": [],
+    "note": "В регламентах нет пароля Wi-Fi.",
+    "actual_ranking": [],
+    "actual_sources": []
+  },
+  {
+    "id": "n02",
+    "question": "Как подключиться к корпоративному VPN: адрес сервера и инструкция?",
+    "kind": "negative",
+    "expected_status": "insufficient_evidence",
+    "expected_answer": "не определён",
+    "history": [],
+    "expected_sources": [],
+    "note": "В корпусе нет инструкции подключения к VPN.",
+    "actual_ranking": [],
+    "actual_sources": []
+  },
+  {
+    "id": "n03",
+    "question": "Какая сумма компенсации за абонемент в фитнес-клуб?",
+    "kind": "negative",
+    "expected_status": "insufficient_evidence",
+    "expected_answer": "не определён",
+    "history": [],
+    "expected_sources": [],
+    "note": "В корпусе нет условий компенсации фитнеса.",
+    "actual_ranking": [],
+    "actual_sources": []
+  },
+  {
+    "id": "n04",
+    "question": "Какое меню корпоративной столовой на завтра?",
+    "kind": "negative",
+    "expected_status": "insufficient_evidence",
+    "expected_answer": "не определён",
+    "history": [],
+    "expected_sources": [],
+    "note": "В корпусе нет актуального меню.",
+    "actual_ranking": [],
+    "actual_sources": []
+  },
+  {
+    "id": "n05",
+    "question": "Какой автобус и во сколько завтра отвозит сотрудников на завод в Казани?",
+    "kind": "negative",
+    "expected_status": "insufficient_evidence",
+    "expected_answer": "не определён",
+    "history": [],
+    "expected_sources": [],
+    "note": "В корпусе нет расписания транспорта.",
+    "actual_ranking": [],
+    "actual_sources": []
+  },
+  {
+    "id": "n06",
+    "question": "Сколько сейчас дней отпуска осталось лично у меня?",
+    "kind": "negative",
+    "expected_status": "insufficient_evidence",
+    "expected_answer": "не определён",
+    "history": [],
+    "expected_sources": [],
+    "note": "Личный остаток отпуска требует данных HR-системы; общие правила отпуска его не определяют.",
+    "actual_ranking": [],
+    "actual_sources": []
+  },
+  {
+    "id": "a01",
+    "question": "А сколько?",
+    "kind": "ambiguous",
+    "expected_status": "needs_clarification",
+    "expected_answer": "не определён",
+    "history": [],
+    "expected_sources": [],
+    "note": "Нет предыдущего вопроса: требуется уточнение.",
+    "actual_ranking": [],
+    "actual_sources": []
+  },
+  {
+    "id": "a02",
+    "question": "А если дистанционно?",
+    "kind": "ambiguous",
+    "expected_status": "needs_clarification",
+    "expected_answer": "не определён",
+    "history": [],
+    "expected_sources": [],
+    "note": "Нет предыдущего вопроса: требуется уточнение.",
+    "actual_ranking": [],
+    "actual_sources": []
+  },
+  {
+    "id": "acl01",
+    "question": "Какой график рабочей недели установлен ПВТР?",
+    "kind": "access",
+    "expected_status": "insufficient_evidence",
+    "expected_answer": "не определён",
+    "history": [],
+    "context": {
+      "org_id": "test_other_org",
+      "permissions": [
+        "kb:read"
+      ]
+    },
+    "expected_sources": [],
+    "note": "Искусственный контекст для проверки доступа. Документы этой организации в нашем корпусе не размечены.",
+    "actual_ranking": [],
+    "actual_sources": []
+  }
+]

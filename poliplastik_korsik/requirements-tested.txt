@@ -1,0 +1,5 @@
+# Exact versions used for the attached corpus run, Python 3.12.
+PyMuPDF==1.26.6
+python-pptx==1.0.2
+Pillow==12.3.0
+lxml==6.1.1
