@@ -1,52 +1,51 @@
-# Secrets and local configuration. Examples are versioned.
-.env
-.env.*
-!.env.example
-!.env.*.example
-.secrets/
-*.key
-*.p12
-*.pfx
-
-# Python environments, caches and build output.
+# Python: окружения и байткод
 .venv/
 venv/
 env/
 __pycache__/
 *.py[cod]
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-.coverage
-htmlcov/
+
+# Секреты и локальные настройки. Шаблоны сохраняем в Git.
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Состояние фоновых процессов и логи
+celerybeat-schedule*
+celerybeat.pid
+*.pid
+*.log
+/logs/
+/runtime/
+
+# Локальные данные PostgreSQL/Redis и резервные копии
+/pgdata/
+/postgres-data/
+/redis-data/
+/dump.rdb
+/appendonly.aof
+/appendonlydir/
+/backups/
+
+# Сборка и выдаваемые архивы
 /build/
 /dist/
 *.egg-info/
 .eggs/
 
-# Local database, imported corporate documents, tokens and process state.
-# Root anchors preserve the prepared onboarding/data/*.json scenario.
-/data/
-/materials/
-/outputs/
-/logs/
-/runtime/
-/pgdata/
-/postgres-data/
-/redis-data/
-/backups/
-/dump.rdb
-/appendonly.aof
-/appendonlydir/
-celerybeat-schedule*
-celerybeat.pid
-*.pid
-*.log
+# Кэши инструментов
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
 
-# Personal editor and OS files.
-.idea/
-.vscode/
+# ОС и персональные настройки редактора
 .DS_Store
 Thumbs.db
+.idea/
 *.swp
 *.swo
+
+# Подготовленный onboarding/data/*.json, SQL и документация НЕ игнорируются.
