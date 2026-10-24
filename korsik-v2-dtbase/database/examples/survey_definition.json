@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "completion_text": "Спасибо! Девять вопросов завершены.",
+  "questions": [
+    {
+      "code": "load",
+      "type": "rating",
+      "scale_direction": "low_bad",
+      "prompt": "Насколько комфортна нагрузка?",
+      "analyze": true
+    },
+    {
+      "code": "tasks_clear",
+      "type": "boolean",
+      "prompt": "Понятны ли рабочие задачи?",
+      "comment_rule": {
+        "mode": "values",
+        "values": [
+          false
+        ]
+      },
+      "analyze": true
+    },
+    {
+      "code": "help",
+      "type": "single_choice",
+      "prompt": "Кто помогает вам адаптироваться?",
+      "options": [
+        {
+          "id": "mentor",
+          "label": "Наставник"
+        },
+        {
+          "id": "team",
+          "label": "Коллеги"
+        },
+        {
+          "id": "other",
+          "label": "Свой вариант"
+        }
+      ],
+      "comment_rule": {
+        "mode": "values",
+        "values": [
+          "other"
+        ]
+      },
+      "analyze": true
+    },
+    {
+      "code": "contacts",
+      "type": "multi_choice",
+      "prompt": "С кем вы уже познакомились?",
+      "options": [
+        {
+          "id": "mentor",
+          "label": "Наставник"
+        },
+        {
+          "id": "hr",
+          "label": "Закреплённый HR"
+        },
+        {
+          "id": "none",
+          "label": "Никто"
+        }
+      ],
+      "exclusive_options": [
+        "none"
+      ],
+      "analyze": true
+    },
+    {
+      "code": "feedback",
+      "type": "text",
+      "prompt": "Что помогло в первые дни?",
+      "analyze": true
+    },
+    {
+      "code": "photo",
+      "type": "attachment",
+      "prompt": "При желании прикрепите фото для знакомства.",
+      "required": false,
+      "analyze": false
+    },
+    {
+      "code": "expectations",
+      "type": "rating",
+      "scale_direction": "low_bad",
+      "prompt": "Насколько оправдались ожидания?",
+      "when": {
+        "question_code": "tasks_clear",
+        "operator": "equals",
+        "value": false
+      },
+      "analyze": true
+    },
+    {
+      "code": "stay",
+      "type": "single_choice",
+      "prompt": "Планируете продолжить работу?",
+      "options": [
+        {
+          "id": "yes",
+          "label": "Да, однозначно"
+        },
+        {
+          "id": "unsure",
+          "label": "Пока не уверен"
+        },
+        {
+          "id": "leave",
+          "label": "Нет, задумываюсь об уходе"
+        }
+      ],
+      "comment_rule": {
+        "mode": "values",
+        "values": [
+          "unsure",
+          "leave"
+        ]
+      },
+      "analyze": true
+    },
+    {
+      "code": "improve",
+      "type": "text",
+      "prompt": "Что можно улучшить?",
+      "analyze": true
+    }
+  ],
+  "variants": [
+    {
+      "audience": {
+        "location_tags": [
+          "GrPP"
+        ],
+        "employee_types": [
+          "office"
+        ]
+      },
+      "body": "Демонстрационный опрос для офисного сотрудника GrPP."
+    }
+  ]
+}

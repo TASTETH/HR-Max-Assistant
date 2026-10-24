@@ -1,0 +1,16 @@
+erDiagram
+ direction TB
+ hr_users ||--o{ employees : assigned_to
+ org_units o|--o{ employees : belongs_to
+ employees ||--o{ invitations : invited_by
+ employees ||--o{ employee_plans : has_history
+ hr_users ||--o{ employee_plans : assigns
+ plan_templates ||--o{ plan_versions : versions
+ plan_versions ||--o{ template_events : contains
+ plan_versions ||--o{ employee_plans : fixed_version
+ employee_plans ||--|{ plan_events : snapshots
+ template_events ||--o{ plan_events : origin
+ template_events o|--o{ template_events : earlier_dependency
+ plan_events o|--o{ plan_events : earlier_dependency
+
+ plan_events ||--o{ event_answers : question_answers

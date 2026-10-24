@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@electric-sql/pglite": "0.3.14"
+  },
+  "scripts": {
+    "smoke": "node pglite_smoke.mjs",
+    "smoke:permissions": "node pglite_permissions.mjs",
+    "smoke:upgrade": "node pglite_upgrade.mjs"
+  }
+}
