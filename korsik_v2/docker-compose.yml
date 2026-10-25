@@ -1,0 +1,70 @@
+# Корсик: PostgreSQL + API (webhook и кабинет) + worker (+ cloudflared по профилю "tunnel").
+# Ollama работает на хосте (GPU), контейнеры ходят к нему через host.docker.internal.
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: korsik
+      POSTGRES_USER: korsik
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U korsik -d korsik"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  app:
+    build: ./backend
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      DATABASE_URL: postgresql://korsik:${POSTGRES_PASSWORD}@db:5432/korsik
+      DATA_DIR: /app/data
+    volumes:
+      - ./data:/app/data
+      - ./seed:/app/seed:ro
+    ports:
+      - "127.0.0.1:8000:8000"     # только локально; наружу — через туннель HTTPS
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request;urllib.request.urlopen('http://127.0.0.1:8000/health')"]
+      interval: 10s
+      timeout: 3s
+      retries: 10
+
+  worker:
+    build: ./backend
+    restart: unless-stopped
+    command: ["python", "-m", "korsik.worker"]
+    env_file: .env
+    environment:
+      DATABASE_URL: postgresql://korsik:${POSTGRES_PASSWORD}@db:5432/korsik
+      DATA_DIR: /app/data
+    volumes:
+      - ./data:/app/data
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      app:
+        condition: service_healthy
+
+  cloudflared:
+    profiles: ["tunnel"]
+    image: cloudflare/cloudflared:2024.12.2
+    restart: unless-stopped
+    command: ["tunnel", "--no-autoupdate", "run"]
+    environment:
+      TUNNEL_TOKEN: ${CLOUDFLARE_TUNNEL_TOKEN}
+    depends_on:
+      app:
+        condition: service_healthy
+
+volumes:
+  pgdata:
